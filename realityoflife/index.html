@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <style>
@@ -108,11 +109,35 @@
 }
 </style>
 <div class="title">Reality Of Life</div>
-  <div class="centered quotetext">Since you alone are responsible for your thoughts, only you can change them.
+<div class="centered">
+  <div id="quote" class="quotetext">Since you alone are responsible for your thoughts, only you can change them.</div>
   <div class="author">Paramahansa Yogananda | reality of life</div>
   </div>
     <div class="footer">
     © Ravrani Software Developers
     </div>
+	<p id="demo"></p>
+
+<script>
+var obj, dbParam, xmlhttp, myObj, x, txt = "";
+dbParam = JSON.stringify(0);
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        txt += ""
+        for (x in myObj) {
+        	var random = Math.floor(Math.random()* (myObj.length));
+            txt = "" + myObj[random].body + "";
+        }
+        txt += ""        
+        document.getElementById("quote").innerHTML = txt;
+    }
+};
+xmlhttp.open("GET", "https://raw.githubusercontent.com/parthravrani/parthravrani.github.io/master/realityoflife/quote.json", true);
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+
+</script>
 </body>
 </html>
