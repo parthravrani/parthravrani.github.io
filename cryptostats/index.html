@@ -100,7 +100,7 @@ xmlhttp.onreadystatechange = function() {
         myObj = JSON.parse(this.responseText);
         txt += ""
         for (x in myObj) {
-            txt += "<div class='col-sm-3'><div class='box'><div><img src='https://res.cloudinary.com/dxi90ksom/image/upload/"+myObj[x].symbol+".png"+"'></div><b>" +myObj[x].symbol+ "</b> | " + myObj[x].name + "</br><div class='occupation'>Price : $" + myObj[x].price_usd +"</br></br><div class='head'>Stats</div>1h : "+ myObj[x].percent_change_1h +"</br>24h : "+ myObj[x].percent_change_24h +"</br>7d : "+ myObj[x].percent_change_7d +"</div></div></div>";			
+            txt += "<div class='col-sm-3'><div class='box'><div><img src='https://res.cloudinary.com/dxi90ksom/image/upload/"+myObj[x].symbol+".png"+"'></div><b>" +myObj[x].symbol+ "</b> | " + myObj[x].name + "</br><div class='occupation'>Price : $" + myObj[x].price_usd +"</br></br><div class='head'>Stats</div>1h : "+ myObj[x].percent_change_1h+"%</br>24h : "+ myObj[x].percent_change_24h+"%</br>7d : "+ myObj[x].percent_change_7d+"%</div></div></div>";			
         }
         txt += ""        
         document.getElementById("stats").innerHTML = txt;
