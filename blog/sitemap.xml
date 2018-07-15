@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/tag/design/</loc>
-<lastmod>2018-07-15T22:26:00+05:30</lastmod>
+<loc>http://localhost:4000/blog/tag/android/</loc>
+<lastmod>2018-07-15T23:30:28+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/tag/jekyll/</loc>
-<lastmod>2018-07-15T22:26:00+05:30</lastmod>
+<loc>http://localhost:4000/blog/tag/kotlin/</loc>
+<lastmod>2018-07-15T23:30:28+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/tag/web/</loc>
-<lastmod>2018-07-15T22:26:00+05:30</lastmod>
+<lastmod>2018-07-15T23:30:28+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/posts/chalk-sample-post-with-all-elements</loc>
-<lastmod>2017-12-21T00:00:00+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/posts/configuring-chalk</loc>
-<lastmod>2017-12-22T00:00:00+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/posts/introducing-chalk</loc>
-<lastmod>2017-12-23T00:00:00+05:30</lastmod>
+<loc>http://localhost:4000/blog/posts/how-to-set-on-click-listener-kotlin</loc>
+<lastmod>2018-07-15T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/about</loc>

@@ -7,27 +7,11 @@
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Introducing chalk</title>
-        <description>Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.</description>
-        <pubDate>Sat, 23 Dec 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/posts/introducing-chalk</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/posts/introducing-chalk</guid>
-      </item>
-    
-      <item>
-        <title>How to configure Chalk</title>
-        <description>Learn more about the config file for Chalk and how to set it up properly.</description>
-        <pubDate>Fri, 22 Dec 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/posts/configuring-chalk</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/posts/configuring-chalk</guid>
-      </item>
-    
-      <item>
-        <title>Chalk sample post with all elements</title>
-        <description>Have a look at all the predesigned elements you can use in Chalk.</description>
-        <pubDate>Thu, 21 Dec 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/posts/chalk-sample-post-with-all-elements</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/posts/chalk-sample-post-with-all-elements</guid>
+        <title>How to set OnClickListener on a Button in Kotlin Android | Display Toast</title>
+        <description>Today we are going to look on to display a Toast message on Button click using Kotlin by using OnClickListener on it.</description>
+        <pubDate>Sun, 15 Jul 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/posts/how-to-set-on-click-listener-kotlin</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/posts/how-to-set-on-click-listener-kotlin</guid>
       </item>
     
   </channel>
