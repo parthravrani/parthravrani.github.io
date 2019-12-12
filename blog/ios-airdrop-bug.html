@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Martin Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Apple has fixed a bug in iOS 13.3, out today, which let anyone temporarily lock users out of their iPhones and iPads by forcing their devices into an inescapable loop." />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Ravrani Developers" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122340213-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122340213-2');
+	</script>
+
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="An iOS bug in AirDrop let anyone temporarily lock-up nearby iPhones,iPad"/>
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="images/airdrop-ios-bug.png"/>
+	<meta property="og:url" content="/ios-airdrop-bug"/>
+	<meta property="og:site_name" content="Blog"/>
+	<meta property="og:description" content="Apple has fixed a bug in iOS 13.3, out today, which let anyone temporarily lock users out of their iPhones and iPads by forcing their devices into an inescapable loop."/>
+
+	<meta name="twitter:title" content="An iOS bug in AirDrop let anyone temporarily lock-up nearby iPhones,iPad" />
+  	<meta name="twitter:description" content="Apple has fixed a bug in iOS 13.3, out today, which let anyone temporarily lock users out of their iPhones and iPads by forcing their devices into an inescapable loop.">
+	<meta name="twitter:image" content="images/airdrop-ios-bug.png" />
+	<meta name="twitter:url" content="/ios-airdrop-bug" />
+	<meta name="twitter:card" content="summary" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+	<body>
+	
+	<div id="colorlib-page">
+		
+		<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="colorlib-navbar-brand">
+					<a class="colorlib-logo logo" href="/">R.</a>
+				</div>
+				<!-- <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a> -->
+			</div>
+		</div>
+	</div>
+</header>
+
+		<div id="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
+						<span>December 12, 2019</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row row-padded-bottom">
+							<div class="col-md-12 animate-box">
+								<article>
+									<div class="blog-img" style="border-radius: 15px; background-image: url(images/airdrop-ios-bug.png);"></div>
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1">
+											<div class="desc">
+												<span><b>by:</b> Parth Ravrani</span>
+												<h1><b><a href="#">An iOS bug in AirDrop let anyone temporarily lock-up nearby iPhones,iPad</a></b></h1>
+												
+												<p>Apple has fixed a bug in iOS 13.3, out today, which let anyone temporarily lock users out of their iPhones and iPads by forcing their devices into an inescapable loop.</p>
+
+<p><a href="https://twitter.com/KishanBagaria">Kishan Bagaria</a> found a bug in AirDrop, which allows users to share files between iOS devices. He found the bug let him repeatedly send files to all devices able to accept files within wireless range of an attacker.</p>
+
+<p>When a file is received, iOS blocks the display until the file is accepted or rejected. But because iOS didn’t limit the number of file requests a device can accept, an attacker can simply keep sending files again and again, repeatedly displaying the file accept box, which causes the device to get stuck in a loop.</p>
+
+<p>Using <a href="https://github.com/seemoo-lab/opendrop">an open-source tool</a>, Bagaria could repeatedly send files again and again to not only a specific target in range, but to any device set to accept files within wireless range.</p>
+
+<p>Bagaria calls the bug “AirDoS,” the latter part is short for “denial-of-service,” which effectively denies a user access to their device.</p>
+
+<p>Devices that had their AirDrop setting set to receive files from “Everyone” were mostly at risk. Turning off Bluetooth would effectively prevent the attack, but Bagaria said that the file accept box is so persistent it’s near-impossible to turn off Bluetooth when an attack is under way.</p>
+
+<p>The only other way to stop an attack? “Simply run away,” he said. Once a user is out of wireless range of the attacker, they can turn off Bluetooth.</p>
+
+<p>“I’m not sure how well this’d work in an airplane,” he joked.</p>
+
+<p>Apple fixed the bug by adding a rate-limit that prevents a barrage of requests over a short period of time. But because the bug wasn’t strictly a security vulnerability, Apple said it would not issue a common vulnerability and exposure (CVE) score, typically associated with security-related issues, instead “publicly acknowledge” Bagaria’s findings in <a href="https://support.apple.com/en-us/HT210785">the security advisory</a>.</p>
+
+<p><a href="https://techcrunch.com/2019/12/10/ios-airdrop-lock-up-iphones/">Source: TechCrunch</a></p>
+
+
+												<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ravraniblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="contact" class="colorlib-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Lets Talk</h3>
+				<p>Group of people full of Joy, Enthusiasm, Passion, and Creativity working together creating masterpieces, setting impossible goals and working on them, Challenge us and we'll make sure to beat it.</p>
+				<p class="btn-footer"><a href="mailto:ravranidevelopers@gmail.com">Tell us about your project</a></p>
+			</div>
+			<div class="col-md-6 info">
+				<h3>Info</h3>
+				<p>Email: <strong><a href="mailto:ravranidevelopers@gmail.com">ravranidevelopers@gmail.com</a></strong></p>
+				<p>Phone: <strong><a href="#">+91 8155842407</a></strong></p>
+				<p>Address: <strong>Wherever we feel comfortable, yes we are that open minded ;)</strong></p>
+				<!-- <p class="colorlib-social-icons">
+					<span><a href="#"><i class="icon-social-facebook"></i>Facebook</a></span>
+					<span><a href="#"><i class="icon-social-twitter"></i>Twitter</a></span>
+					<span><a href="#"><i class="icon-social-dribbble"></i>Dribbble</a></span> 
+				</p> -->
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row copyright">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<p>
+					<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	</div>
+
+		<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
